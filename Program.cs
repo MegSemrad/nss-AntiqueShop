@@ -7,6 +7,9 @@ namespace AntiqueShop
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Antique Shop!");
+
+            // Advised to use decimal for monetary amounts and must use "m" at 
+            // the end of decimal amount as on line 15 below
             AntiqueItem chair = new AntiqueItem()
             {
                 Name = "An old chair",
@@ -22,6 +25,7 @@ namespace AntiqueShop
             AntiqueItem painting = new AntiqueItem();
             painting.Name = "Washington on a Horse";
             painting.Price = 100.99m;
+
 
             Customer alice =
                 new Customer("Alice", "Jones", 10m, 100m);

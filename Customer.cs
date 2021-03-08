@@ -1,11 +1,11 @@
 using System;
 
+
 namespace AntiqueShop
 {
     public class Customer
     {
         public string FirstName { get; }
-
         public string LastName { get; }
         public string FullName
         {
@@ -14,9 +14,9 @@ namespace AntiqueShop
                 return $"{FirstName} {LastName}";
             }
         }
-
         private decimal _minprice;
         private decimal _maxPrice;
+
 
         public Customer(string firstName, string lastName,
             decimal minPrice, decimal maxPrice)
@@ -26,6 +26,7 @@ namespace AntiqueShop
             _minprice = minPrice;
             _maxPrice = maxPrice;
         }
+
 
         public void ExamineItem(AntiqueItem item)
         {
@@ -38,6 +39,5 @@ namespace AntiqueShop
                 Console.WriteLine($"Would add {item.Name} to wish list");
             }
         }
-
     }
 }
